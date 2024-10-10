@@ -1,5 +1,3 @@
-
-
 const requestJoke = async () => {
   const responseJoke = await fetch("https://icanhazdadjoke.com/", {
     headers: { Accept: "application/json" },
@@ -10,6 +8,7 @@ const requestJoke = async () => {
 };
 
 const printToConsole = (joke) => {
-  console.log(joke);
+  document.getElementById("joke").innerText = joke;
 };
+
 requestJoke();

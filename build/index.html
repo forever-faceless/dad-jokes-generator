@@ -1,12 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dad Jokes Generator</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<script src="script.js"></script>
-</body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="size-full">
+    <div class="flex h-screen size-full items-center justify-center">
+      <div
+        class="relative min-h-96 h-fit w-3/5 border border-black text-center content-center rounded-xl flex flex-col items-center px-16 py-24"
+      >
+        <p class="text-3xl" id="joke"></p>
+        <button
+          class="bg-neutral-700 color text-white hover:bg-neutral-300 hover:text-black absolute bottom-0 w-full rounded-b-xl p-4 text-xl"
+          onclick="requestJoke()"
+        >
+          Another One!
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
